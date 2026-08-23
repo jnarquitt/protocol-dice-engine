@@ -9,6 +9,14 @@ Matched Blanks uses only repeated blank faces (1, 2, or 3) as a quick secondary 
 
 The mechanic is intended to convert naturally occurring low-frequency dice patterns into concrete mechanical effects on actions and scenes without requiring poker-hand scanning or a separate minigame.
 
+## Core bonus-language rule
+
+**Protocol Dice Engine does not use flat numeric bonuses for these effects.**
+
+If an effect improves a roll, damage, defense, or other quantified outcome, it should normally do so by adding an appropriate die (for example d4, d6, etc.), by changing action economy, by imposing/clearing a condition, or by creating a bounded positional/information effect.
+
+A result such as "+2 damage" is therefore not valid Protocol Dice design language for Matched Blanks. The equivalent minor mechanical expression should be something like **add d4 damage/effect** when appropriate.
+
 ## Recognition rule
 
 After resolving the roll normally, glance only at dice showing 1, 2, or 3.
@@ -75,28 +83,28 @@ These names are mechanical placeholders and may change.
 ### Pair — Minor Edge
 Frequent enough that the effect must be useful but small.
 
-- **11 Impact:** increase the immediate effect modestly. On a damaging action, +2 damage. On a non-damaging action, increase one bounded quantitative result by one small step when the GM can do so without changing success/failure.
+- **11 Impact:** on a damaging action, add **d4** to the immediate damage/effect and score that die normally. On a non-damaging action, add a d4 effect die only where the action has an established quantitative effect die; otherwise use a small bounded nonnumeric increase in force/magnitude.
 - **22 Tempo:** one immediately related simple Interact or very short reposition may occur for 0 AP; cannot create an additional Attack.
 - **33 Control:** improve precision of the successful action: reduce one minor collateral consequence, improve position, or impose/clear one minor situational state when fiction supports it. Does not change a failed roll into a success.
 
 ### Triple — Strong Edge
 Roughly 6–10% for any triple across typical five/six-die pools.
 
-- **111 Impact:** on damage, add one additional primary effect/weapon die and score it normally; on non-damage, achieve a clearly stronger bounded result within the action's existing scope.
+- **111 Impact:** add **one additional primary effect/weapon die** and score it normally; on non-damage actions, achieve a clearly stronger bounded result within the action's existing scope.
 - **222 Tempo:** recover or preserve 1 AP associated with the current sequence, subject to a once-per-turn limit and never raising usable AP above the normal turn maximum except where an explicit rule says otherwise.
 - **333 Control:** choose one strong control rider appropriate to the action: deny a target's Reaction, establish superior position/cover, secure an additional actionable detail from evidence already available, or remove one significant collateral complication. Exact options should be domain templates, not freeform GM fiat.
 
 ### Four Matching Blanks — Major Break
 Approximately 0.4–1.1% depending on pool.
 
-- **1111 Impact:** maximize one added effect/weapon die or increase the action's magnitude by a major bounded step.
+- **1111 Impact:** maximize one added effect/weapon die **or add another primary effect die**, whichever the final damage model proves cleaner in simulation. No flat modifier.
 - **2222 Tempo:** immediately take one non-Attack 1-AP action related to the current objective, even if the normal turn sequence would otherwise end; once per round maximum.
 - **3333 Control:** impose or clear one major scene-relevant condition/positioning state, or establish one decisive evidence/technical/social control advantage supported by the fiction. Must not resolve the entire mission.
 
 ### Five Matching Blanks — Extraordinary
 Extremely rare in ordinary five-die play.
 
-- **11111 Impact:** extraordinary magnitude. A damaging action may maximize its normal damage dice and add one additional primary die; non-damage actions may achieve the strongest plausible result still inside the declared action's scope.
+- **11111 Impact:** extraordinary magnitude. A damaging action may maximize its normal damage/effect dice and add one additional primary die; non-damage actions may achieve the strongest plausible result still inside the declared action's scope. No flat numeric modifier.
 - **22222 Tempo:** gain an immediate additional 1-AP action, including an Attack if otherwise legal, or preserve a Reaction already spent this round. This is an explicit exception because of the rarity.
 - **33333 Control:** establish near-total control of the immediate action/scene element: disarm and secure, completely pin a route, extract the decisive bounded clue, complete an otherwise multi-step technical manipulation, or equivalent. It cannot override impossible fiction, erase campaign consequences, or dictate another character's moral choice.
 
@@ -135,7 +143,7 @@ Test:
 - six-die Mastery pools;
 - combined crit + Matched Blank events;
 - action-economy abuse from 2s;
-- damage spikes from 1s;
+- damage spikes from 1s using dice-only bonus language;
 - control-option clarity from 3s;
 - whether pairs occur too frequently to remember comfortably;
 - whether failure-side triple effects create confusion;
