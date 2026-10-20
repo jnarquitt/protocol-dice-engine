@@ -1,0 +1,263 @@
+{
+  "engine_version": "0.010-playtest",
+  "source": "Extracted from Protocol 7 v0.188 playtest core; setting-agnostic Open Frame.",
+  "protocol_dice": {
+    "blank_faces": [
+      1,
+      2,
+      3
+    ],
+    "scoring": "faces_4_or_higher_contribute_visible_face_value",
+    "matched_blanks_enabled": false
+  },
+  "difficulty": {
+    "easy_under_pressure": 8,
+    "moderate": 12,
+    "hard": 16,
+    "very_hard": 20,
+    "extreme": 24
+  },
+  "margin_bands": [
+    {
+      "min": 1,
+      "max": 3,
+      "label": "Narrow"
+    },
+    {
+      "min": 4,
+      "max": 7,
+      "label": "Solid"
+    },
+    {
+      "min": 8,
+      "max": 11,
+      "label": "Powerful"
+    },
+    {
+      "min": 12,
+      "max": null,
+      "label": "Overwhelming"
+    }
+  ],
+  "abilities": {
+    "ids": [
+      "STR",
+      "DEX",
+      "CON",
+      "INT",
+      "WIS",
+      "CHA"
+    ],
+    "starting_multiset": [
+      "d8",
+      "d8",
+      "d6",
+      "d6",
+      "d4",
+      "d4"
+    ],
+    "die_ladder": [
+      "d4",
+      "d6",
+      "d8",
+      "d10",
+      "d12"
+    ],
+    "ceiling": "d12",
+    "growth_levels": [
+      3,
+      5
+    ]
+  },
+  "skills": {
+    "starting_ranks": 20,
+    "ranks_per_level_after_1": 4,
+    "breakpoints": [
+      {
+        "min_ranks": 0,
+        "max_ranks": 0,
+        "die": "d4"
+      },
+      {
+        "min_ranks": 1,
+        "max_ranks": 2,
+        "die": "d6"
+      },
+      {
+        "min_ranks": 3,
+        "max_ranks": 5,
+        "die": "d8"
+      },
+      {
+        "min_ranks": 6,
+        "max_ranks": 9,
+        "die": "d10"
+      },
+      {
+        "min_ranks": 10,
+        "max_ranks": null,
+        "die": "d12"
+      }
+    ]
+  },
+  "mastery": {
+    "slots_by_level": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1,
+      "5": 1,
+      "6": 2
+    },
+    "die_equals_current_skill_die": true,
+    "requires_mastered_skill": true,
+    "requires_explicit_access": true,
+    "max_mastery_dice_per_roll": 1,
+    "separate_source": true
+  },
+  "vitality": {
+    "base_hp": 18,
+    "ritual_rolls_each_assigned_ability_once": true,
+    "blank_faces": [
+      1,
+      2,
+      3
+    ],
+    "ordinary_formula": "18 + highest face of 4 or higher",
+    "ordinary_min_starting_hp": 22,
+    "ordinary_max_starting_hp": 26,
+    "all_six_blank_exception_starting_hp": 28,
+    "hp_per_level_after_1": 4
+  },
+  "vitality_notes": {
+    "vitality_spark": "Once per session, after the Vitality Ritual, you may reroll one Ability die (playtest experiment)."
+  },
+  "levels": {
+    "1": {
+      "capacity": 16,
+      "edge_slots": 0,
+      "ability_growth_slots": 0,
+      "mastery_slots": 0
+    },
+    "2": {
+      "capacity": 18,
+      "edge_slots": 1,
+      "ability_growth_slots": 0,
+      "mastery_slots": 0
+    },
+    "3": {
+      "capacity": 21,
+      "edge_slots": 1,
+      "ability_growth_slots": 1,
+      "mastery_slots": 0
+    },
+    "4": {
+      "capacity": 24,
+      "edge_slots": 1,
+      "ability_growth_slots": 1,
+      "mastery_slots": 1
+    },
+    "5": {
+      "capacity": 27,
+      "edge_slots": 1,
+      "ability_growth_slots": 2,
+      "mastery_slots": 1
+    },
+    "6": {
+      "capacity": 30,
+      "edge_slots": 1,
+      "ability_growth_slots": 2,
+      "mastery_slots": 2
+    }
+  },
+  "edges": [
+    {
+      "id": "driven",
+      "name": "Driven",
+      "kind": "session",
+      "usage_max": 1,
+      "effect": "After rolling, reroll one die and keep the new result."
+    },
+    {
+      "id": "inspired",
+      "name": "Inspired",
+      "kind": "session",
+      "usage_max": 1,
+      "effect": "Before a roll, gain Advantage for that roll."
+    },
+    {
+      "id": "prepared",
+      "name": "Prepared",
+      "kind": "session",
+      "usage_max": 1,
+      "effect": "Declare one reasonable ordinary preparation the Vector could plausibly have arranged; GM may narrow declarations that exceed the fiction."
+    },
+    {
+      "id": "connected",
+      "name": "Connected",
+      "kind": "session",
+      "usage_max": 1,
+      "effect": "Establish one plausible useful contact, introduction, or ordinary piece of social access; creates opportunity rather than automatic resolution."
+    },
+    {
+      "id": "durable",
+      "name": "Durable",
+      "kind": "persistent",
+      "max_hp_add": 5
+    }
+  ],
+  "action_economy": {
+    "ap_max": 3,
+    "ordinary_attack_ap_cost": 1,
+    "movement": {
+      "ap_cost_per_move": 1,
+      "feet_per_ap": 30,
+      "repeatable": true,
+      "max_normal_movement_per_turn_feet": 90
+    },
+    "universal_run_action": false
+  },
+  "reaction": {
+    "normal_reactions_between_turns": 1,
+    "uses_banked_ap_first": true,
+    "borrow_from_next_turn_only_if_no_banked_ap": true,
+    "max_borrowed_ap": 1,
+    "unused_banked_ap_expires_at_next_turn": true
+  },
+  "dice_sources": {
+    "routine_flat_numeric_modifiers": false,
+    "core_pool": [
+      "skill",
+      "ability_1",
+      "ability_2",
+      "ability_3"
+    ],
+    "advantage": {
+      "die": "d6",
+      "cap": 1
+    },
+    "disadvantage": {
+      "operation": "remove_smallest_ability_die",
+      "cap": 1
+    }
+  },
+  "combat": {
+    "active_defense": true,
+    "successful_attack": "attacker_total > defender_total",
+    "normal_damage": "attacker_total - defender_total",
+    "universal_critical_subsystem": false,
+    "armor": {
+      "adds_relevant_gear_die_to_active_defense": true,
+      "normally_reduces_damage_afterward": false
+    }
+  },
+  "features": {
+    "replaces": "Protocol 7 VAMs",
+    "capacity_resource_name": "Capacity",
+    "field_swap_ap_cost": 1
+  },
+  "open_frame": {
+    "principle": "Skills and Features support modern and archaic fantasy tables. Availability is a table/world choice, not a class restriction.",
+    "weapon_note": "Melee and firearm skills coexist. Your world decides which are common; characters are not class-locked out of either."
+  }
+}

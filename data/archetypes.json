@@ -1,0 +1,223 @@
+{
+  "engine_version": "0.010-playtest",
+  "note": "Archetypes are rapid Level 1 presets only. Nothing they set is locked. Leveling opens the whole catalog.",
+  "starting_capacity": 16,
+  "starting_skill_ranks": 20,
+  "ability_dice": [
+    8,
+    8,
+    6,
+    6,
+    4,
+    4
+  ],
+  "archetypes": [
+    {
+      "id": "street-adept",
+      "name": "Street Adept",
+      "blurb": "Moves fast, hits first, survives the alley. Modern or fantasy streets both fit.",
+      "world_tags": [
+        "modern",
+        "urban",
+        "fantasy"
+      ],
+      "ability_priority": [
+        "DEX",
+        "STR",
+        "CON",
+        "WIS",
+        "CHA",
+        "INT"
+      ],
+      "skills": {
+        "sk-sidearms": 4,
+        "sk-light-melee": 3,
+        "sk-athletics": 3,
+        "sk-dodge": 4,
+        "sk-stealth": 3,
+        "sk-perception": 3
+      },
+      "feature_ids": [
+        "ft-fast-draw",
+        "ft-threat-focus",
+        "ft-warded-step",
+        "ft-ghost-trail"
+      ],
+      "spell_ids": [
+        "sp-veil"
+      ]
+    },
+    {
+      "id": "occult-scholar",
+      "name": "Occult Scholar",
+      "blurb": "Reads the hidden page. Wards, residues, names that should not be spoken.",
+      "world_tags": [
+        "modern",
+        "occult",
+        "fantasy"
+      ],
+      "ability_priority": [
+        "INT",
+        "WIS",
+        "CHA",
+        "CON",
+        "DEX",
+        "STR"
+      ],
+      "skills": {
+        "sk-spellcasting": 5,
+        "sk-ritual": 3,
+        "sk-investigation": 4,
+        "sk-history": 3,
+        "sk-will": 3,
+        "sk-perception": 2
+      },
+      "feature_ids": [
+        "ft-second-sight",
+        "ft-binding-word",
+        "ft-field-kit"
+      ],
+      "spell_ids": [
+        "sp-veil",
+        "sp-reveal",
+        "sp-mending-touch",
+        "sp-compel-truth"
+      ]
+    },
+    {
+      "id": "oathbound-blade",
+      "name": "Oathbound Blade",
+      "blurb": "Steel, vow, and close work. At home in a court duel or a dungeon stair.",
+      "world_tags": [
+        "archaic",
+        "fantasy"
+      ],
+      "ability_priority": [
+        "STR",
+        "CON",
+        "DEX",
+        "WIS",
+        "CHA",
+        "INT"
+      ],
+      "skills": {
+        "sk-heavy-melee": 5,
+        "sk-light-melee": 3,
+        "sk-athletics": 3,
+        "sk-fortitude": 3,
+        "sk-dodge": 3,
+        "sk-leadership": 3
+      },
+      "feature_ids": [
+        "ft-fast-draw",
+        "ft-snap-strike",
+        "ft-threat-focus",
+        "ft-hard-to-kill",
+        "ft-iron-gut"
+      ],
+      "spell_ids": []
+    },
+    {
+      "id": "fixer",
+      "name": "Fixer",
+      "blurb": "Talks the room open. Connections, cover stories, and quiet leverage.",
+      "world_tags": [
+        "modern",
+        "urban",
+        "fantasy"
+      ],
+      "ability_priority": [
+        "CHA",
+        "WIS",
+        "INT",
+        "DEX",
+        "CON",
+        "STR"
+      ],
+      "skills": {
+        "sk-influence": 5,
+        "sk-deception": 4,
+        "sk-tradecraft": 3,
+        "sk-perception": 3,
+        "sk-culture": 3,
+        "sk-security": 2
+      },
+      "feature_ids": [
+        "ft-cold-read",
+        "ft-open-doors",
+        "ft-cover-story",
+        "ft-second-sight",
+        "ft-field-kit"
+      ],
+      "spell_ids": []
+    },
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "blurb": "Tracks monsters, marksmen, or both. Patience, terrain, and a clean shot.",
+      "world_tags": [
+        "modern",
+        "archaic",
+        "fantasy"
+      ],
+      "ability_priority": [
+        "WIS",
+        "DEX",
+        "CON",
+        "INT",
+        "STR",
+        "CHA"
+      ],
+      "skills": {
+        "sk-longarms": 4,
+        "sk-precision-weapons": 3,
+        "sk-survival": 4,
+        "sk-perception": 4,
+        "sk-stealth": 3,
+        "sk-athletics": 2
+      },
+      "feature_ids": [
+        "ft-snap-strike",
+        "ft-ghost-trail",
+        "ft-threat-focus",
+        "ft-field-kit",
+        "ft-second-sight"
+      ],
+      "spell_ids": []
+    },
+    {
+      "id": "tinker",
+      "name": "Tinker",
+      "blurb": "Makes broken things work \u2014 wards, engines, locks, or tomorrow\u2019s chrome.",
+      "world_tags": [
+        "modern",
+        "technical",
+        "cyberpunk-ready"
+      ],
+      "ability_priority": [
+        "INT",
+        "DEX",
+        "WIS",
+        "CON",
+        "CHA",
+        "STR"
+      ],
+      "skills": {
+        "sk-engineering": 5,
+        "sk-computing": 3,
+        "sk-security": 4,
+        "sk-science": 3,
+        "sk-investigation": 3,
+        "sk-sidearms": 2
+      },
+      "feature_ids": [
+        "ft-jury-rig",
+        "ft-field-kit",
+        "ft-fast-draw",
+        "ft-cover-story",
+        "ft-iron-gut"
+      ],
+      "spell_ids": []
+    }
+  ]
+}

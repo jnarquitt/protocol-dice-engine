@@ -1,0 +1,104 @@
+{
+  "engine_version": "0.010-playtest",
+  "principle": "Spells are cast with the Spellcasting skill using Protocol Dice. Prepared workings load into Capacity. No Vancian slots.",
+  "casting_rules": {
+    "required_skill": "sk-spellcasting",
+    "ritual_skill": "sk-ritual",
+    "resolution": "Roll Spellcasting (or Ritual for marked ritual spells) vs Difficulty, or opposed defense when noted.",
+    "ap_cost_default": 1,
+    "prepared": "A spell must be prepared (loaded into Capacity) to cast in a scene, unless the spell says otherwise.",
+    "failure": "Failed cast spends AP. The spell does not take effect. Optional backlash is a table choice for later playtest."
+  },
+  "spells": [
+    {
+      "id": "sp-veil",
+      "name": "Veil",
+      "school": "Glamour",
+      "capacity": 2,
+      "ap": 1,
+      "difficulty": 12,
+      "skill": "sk-spellcasting",
+      "summary": "Blur attention. Gain Advantage on your next Stealth check this scene, or impose Disadvantage on one watcher spotting you.",
+      "detail": "Modern: crowd camouflage. Archaic: a whisper of mist. Same roll."
+    },
+    {
+      "id": "sp-hexbolt",
+      "name": "Hexbolt",
+      "school": "Evocation",
+      "capacity": 3,
+      "ap": 1,
+      "difficulty": "opposed",
+      "oppose_with": "sk-dodge",
+      "skill": "sk-spellcasting",
+      "summary": "Ranged occult attack. On success, damage equals winning margin (active defense).",
+      "detail": "Looks like lightning, cold fire, or a thrown rune — fiction only."
+    },
+    {
+      "id": "sp-mending-touch",
+      "name": "Mending Touch",
+      "school": "Restoration",
+      "capacity": 2,
+      "ap": 1,
+      "difficulty": 12,
+      "skill": "sk-spellcasting",
+      "summary": "Heal an adjacent ally for Narrow/Solid/Powerful/Overwhelming → 3/5/8/12 HP (by margin band).",
+      "detail": "Cannot raise a corpse. Stabilizes fictionally on Narrow if the table wants mercy."
+    },
+    {
+      "id": "sp-ward-circle",
+      "name": "Ward Circle",
+      "school": "Abjuration",
+      "capacity": 3,
+      "ap": 2,
+      "difficulty": 16,
+      "skill": "sk-ritual",
+      "summary": "Scene-length circle. Allies inside add Feature d4 to Fortitude/Will vs intrusion you named when casting.",
+      "detail": "Ritual skill. Takes a short setup beat; not a snap fight cast."
+    },
+    {
+      "id": "sp-compel-truth",
+      "name": "Compel Truth",
+      "school": "Dominion",
+      "capacity": 3,
+      "ap": 1,
+      "difficulty": "opposed",
+      "oppose_with": "sk-will",
+      "skill": "sk-spellcasting",
+      "summary": "Ask one narrow question. On success, the target answers truthfully or takes a Solid social/occult consequence the fiction supports.",
+      "detail": "Not mind control. Creatures bound by oath, hospitality, or true name sit at Moderate (12) instead if the GM agrees."
+    },
+    {
+      "id": "sp-open-the-way",
+      "name": "Open the Way",
+      "school": "Traversal",
+      "capacity": 2,
+      "ap": 1,
+      "difficulty": 12,
+      "skill": "sk-spellcasting",
+      "summary": "Unstick a mundane lock, latch, or simple ward. Hard locks/wards are 16; magical seals 20+.",
+      "detail": "Does not erase alarms. Security skill may still matter afterward."
+    },
+    {
+      "id": "sp-shadow-step",
+      "name": "Shadow Step",
+      "school": "Traversal",
+      "capacity": 3,
+      "ap": 1,
+      "difficulty": 16,
+      "skill": "sk-spellcasting",
+      "summary": "Instantly move up to 30 feet to a space you can see that is in dim light, cover, or threshold fiction.",
+      "detail": "Replaces a normal move. Line of effect required."
+    },
+    {
+      "id": "sp-reveal",
+      "name": "Reveal",
+      "school": "Divination",
+      "capacity": 2,
+      "ap": 1,
+      "difficulty": 12,
+      "skill": "sk-spellcasting",
+      "summary": "Add Advantage to your next Perception or Investigation roll this scene when hunting occult residue or concealment.",
+      "detail": "Stacks poorly with Second Sight Feature die — pick the better named source; do not invent flat bonuses."
+    }
+  ]
+}
