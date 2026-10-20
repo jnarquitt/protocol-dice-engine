@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0e0c0b">
+  <title>Jade Lion Studios — Open Frame Rules</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0e0c0b; --ink: #f3ebe0; --muted: #b4a89a; --gold: #d4a03c;
+      --crimson: #b33a3a; --line: #3a322c; --card: #1e1916;
+      --display: "Fraunces", Georgia, serif; --sans: "Figtree", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--sans); background: var(--bg); color: var(--ink); line-height: 1.55; }
+    .bar {
+      position: sticky; top: 0; z-index: 5;
+      display: flex; gap: .5rem; flex-wrap: wrap; align-items: center;
+      padding: .65rem 1rem; background: rgba(14,12,11,.95); border-bottom: 1px solid var(--line);
+    }
+    .bar a {
+      text-decoration: none; color: var(--gold); font-weight: 800; font-size: .85rem;
+      padding: .45rem .65rem; border: 1px solid #5a4630; border-radius: 8px; background: #1b1916;
+    }
+    main { width: min(740px, calc(100% - 2rem)); margin: 0 auto; padding: 2rem 0 4rem; }
+    h1, h2 { font-family: var(--display); letter-spacing: -.02em; }
+    h1 { font-size: clamp(2rem, 7vw, 2.8rem); margin: 0 0 .6rem; }
+    h2 { color: var(--gold); font-size: 1.35rem; margin: 2rem 0 .6rem; scroll-margin-top: 4rem; }
+    p, li { color: var(--muted); }
+    strong { color: var(--ink); }
+    table { width: 100%; border-collapse: collapse; margin: .8rem 0; font-size: .95rem; }
+    th, td { border-bottom: 1px solid var(--line); padding: .55rem .4rem; text-align: left; }
+    th { color: var(--gold); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1rem; margin: 1rem 0; }
+    .cta {
+      display: block; text-align: center; text-decoration: none; background: var(--crimson); color: #fff;
+      font-weight: 800; padding: 1rem; border-radius: 12px; margin: 1.2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="bar">
+    <a href="../">Landing</a>
+    <a href="../app/">Open app</a>
+  </nav>
+  <main>
+    <h1>Open Frame Rules</h1>
+    <p><strong>Jade Lion Studios</strong> · Protocol Dice Engine v0.010 playtest digest. Mechanical ancestor: Protocol 7 v0.188.</p>
+    <a class="cta" href="../app/">Launch character app</a>
+
+    <h2 id="open-frame">Open Frame</h2>
+    <p>The Engine supports <strong>modern occult</strong> and <strong>archaic fantasy</strong> at the same table language. Skills include blades and firearms. Your world decides what is common. Characters are not class-locked. <strong>Archetypes</strong> are rapid Level 1 presets only — leveling opens the whole catalog.</p>
+
+    <h2 id="dice">Protocol Dice</h2>
+    <div class="card">
+      <p><strong>Faces 1–3 are blank.</strong> Faces 4+ score their value. Roll the full pool together.</p>
+      <p><strong>Normal pool:</strong> Skill die + the three Ability dice listed for that Skill.</p>
+      <p><strong>Advantage:</strong> add d6. <strong>Disadvantage:</strong> remove the smallest Ability die. They cancel one-for-one; each side caps at one effective instance.</p>
+      <p><strong>Ties reroll</strong> (exact match to target or opposed total).</p>
+      <p>No routine flat numeric modifiers. Named dice sources only.</p>
+    </div>
+    <table>
+      <tr><th>Difficulty</th><th>Target</th></tr>
+      <tr><td>Easy under pressure</td><td>8</td></tr>
+      <tr><td>Moderate</td><td>12</td></tr>
+      <tr><td>Hard</td><td>16</td></tr>
+      <tr><td>Very Hard</td><td>20</td></tr>
+      <tr><td>Extreme</td><td>24</td></tr>
+    </table>
+    <table>
+      <tr><th>Margin</th><th>Band</th></tr>
+      <tr><td>1–3</td><td>Narrow</td></tr>
+      <tr><td>4–7</td><td>Solid</td></tr>
+      <tr><td>8–11</td><td>Powerful</td></tr>
+      <tr><td>12+</td><td>Overwhelming</td></tr>
+    </table>
+
+    <h2 id="abilities">Abilities & skills</h2>
+    <p>Assign <strong>d8, d8, d6, d6, d4, d4</strong> among STR, DEX, CON, INT, WIS, CHA. Spend <strong>20 Skill Ranks</strong> at Level 1.</p>
+    <table>
+      <tr><th>Ranks</th><th>Skill die</th></tr>
+      <tr><td>0</td><td>d4</td></tr>
+      <tr><td>1–2</td><td>d6</td></tr>
+      <tr><td>3–5</td><td>d8</td></tr>
+      <tr><td>6–9</td><td>d10</td></tr>
+      <tr><td>10+</td><td>d12</td></tr>
+    </table>
+
+    <h2 id="skills">Spells are skills</h2>
+    <p><strong>Spellcasting</strong> is a Skill (INT · WIS · CHA). <strong>Ritual</strong> covers slow workings. Spells are effects you cast by rolling that skill — same Protocol Dice math.</p>
+    <p>Prepare spells into <strong>Capacity</strong> (shared with Features). Casting costs AP and a roll vs Difficulty or an opposed defense. There are <strong>no Vancian slots</strong> and no detached mana track.</p>
+
+    <h2 id="features">Features & Capacity</h2>
+    <p>Features are the special-resource layer (Protocol 7 called these VAMs). Capacity at Level 1 is <strong>16</strong>. Loaded Features and prepared spells both spend Capacity.</p>
+
+    <h2 id="vitality">Vitality</h2>
+    <p>Roll each Ability die once. Starting HP = <strong>18 + highest face of 4+</strong>. If all six faces are blank, starting HP = <strong>28</strong>. Each level after 1: +4 max HP and +4 Skill Ranks.</p>
+
+    <h2 id="play">Play & combat</h2>
+    <p><strong>When you do not know what to do, go to Play.</strong> Pools are assembled and rolled only there.</p>
+    <p><strong>3 AP</strong> per turn. Normal attack 1 AP. Move 30 feet per AP. <strong>Active defense:</strong> both sides roll; damage equals winning margin if the attacker wins. Armor adds a gear die to defense rather than subtracting damage afterward (when gear dice are in play).</p>
+    <p>One Reaction between turns, spending banked AP first.</p>
+
+    <h2 id="archetypes">Archetypes</h2>
+    <p>Street Adept, Occult Scholar, Oathbound Blade, Fixer, Hunter, Tinker — start packages only. Opt out and build custom at any time.</p>
+
+    <h2 id="advancement">Advancement (Levels 1–6)</h2>
+    <table>
+      <tr><th>Level</th><th>Capacity</th><th>Extra</th></tr>
+      <tr><td>1</td><td>16</td><td>Start</td></tr>
+      <tr><td>2</td><td>18</td><td>Edge</td></tr>
+      <tr><td>3</td><td>21</td><td>Ability step</td></tr>
+      <tr><td>4</td><td>24</td><td>Skill Mastery</td></tr>
+      <tr><td>5</td><td>27</td><td>Ability step</td></tr>
+      <tr><td>6</td><td>30</td><td>Second Mastery</td></tr>
+    </table>
+    <p>Edges (Driven, Inspired, Prepared, Connected, Durable) match the Protocol 7 playtest chassis. Mastery adds a Skill-sized die only when an access Feature/fiction permits it.</p>
+
+    <p class="muted" style="margin-top:2rem">Authority: repository <code>DECISIONS.md</code> + <code>data/rules-core.json</code>. Protocol 7 remains the deep playtest ancestor on GitHub.</p>
+  </main>
+</body>
+</html>

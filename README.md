@@ -1,24 +1,26 @@
-# Protocol Dice Engine
+# Protocol Dice Engine — Jade Lion Studios
 
-**Any world. One protocol.**
+**Live site:** https://jnarquitt.github.io/protocol-dice-engine/
 
-Protocol Dice is the setting-agnostic core rules and dice system.  
-Protocol 7 is the first complete, playtested setting that sits on top of it.
+| Path | What |
+|------|------|
+| `/` | Jade Lion Studios hub (Discord paste target) |
+| `/app/` | Open Frame character + Play app (v0.010 playtest) |
+| `/rules/` | Open Frame rules guide |
+| `/archive/v0.005/` | Prior Protocol Dice Engine package |
 
-This repository holds the core engine (mechanics, interactive tools, and guides).  
-The Protocol 7 setting materials live in the separate `protocol-7` repository and are treated as the reference for “what the full system feels like in play.”
+## Local
 
-## Current goal
-Build a clean, setting-agnostic Protocol Dice system and interactive tools that stay faithful to the well-playtested Protocol 7 experience. Protocol 7 becomes the flagship full-system package at the end of the core rules rather than a separate, drifting version.
+```bash
+python3 -m http.server 43127 --bind 127.0.0.1
+```
 
-## Current release (v0.005 pre-alpha)
-- `rules.html` — interactive rules guide
-- `app.html` — character builder + play surface + dice roller
-- `rulebook.html` — printable PDF
-- `index.html` — launch page
+Open http://127.0.0.1:43127/
 
 ## Authority
-- Repository state is the source of truth.
-- Protocol 7’s playtested interactive apps (especially the v0.185–v0.188 character/session tools) are the mechanical reference. Do not let the agnostic tools diverge in feel or resolution from those.
 
-See `PROJECT_DOCUMENTATION/` for deeper design notes.
+- [`DECISIONS.md`](DECISIONS.md) — product decisions
+- [`GITHUB_MAP.md`](GITHUB_MAP.md) — sibling repos
+- [`PROJECT_DOCUMENTATION/`](PROJECT_DOCUMENTATION/) — earlier design notes
+
+GitHub Pages serves this repository from the `main` branch (root).

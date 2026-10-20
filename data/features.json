@@ -1,0 +1,148 @@
+{
+  "engine_version": "0.010-playtest",
+  "resource_name": "Features",
+  "capacity_name": "Capacity",
+  "note": "Setting-agnostic special-resource layer. Mechanical ancestor: Protocol 7 VAMs. Flavor supports modern occult and archaic fantasy; cyberpunk skins can remap later.",
+  "features": [
+    {
+      "id": "ft-fast-draw",
+      "name": "Fast Draw",
+      "family": "Martial",
+      "level": 1,
+      "capacity": 1,
+      "summary": "Ready or stow one accessible one-handed weapon for 0 AP, once per round.",
+      "detail": "When your hands are free enough to reach it, you may ready or stow one accessible one-handed weapon (blade, wand, sidearm, tool) without spending AP. Once per round.",
+      "pool_die": null
+    },
+    {
+      "id": "ft-threat-focus",
+      "name": "Threat Focus",
+      "family": "Martial",
+      "level": 1,
+      "capacity": 2,
+      "summary": "Mark one visible threat; add d4 to your first defense against them until your next turn.",
+      "detail": "Choose a visible tracked threat. Until your next turn begins, add a Feature d4 to your first appropriate active defense against that threat.",
+      "pool_die": "d4"
+    },
+    {
+      "id": "ft-snap-strike",
+      "name": "Snap Strike",
+      "family": "Martial",
+      "level": 1,
+      "capacity": 3,
+      "summary": "After you Aim, your next trained attack this turn costs 0 AP (once per turn).",
+      "detail": "Works with melee or ranged training your world allows. Aim first, then strike without spending the usual attack AP.",
+      "pool_die": null
+    },
+    {
+      "id": "ft-warded-step",
+      "name": "Warded Step",
+      "family": "Occult",
+      "level": 1,
+      "capacity": 2,
+      "summary": "Once per turn, move 30 feet as a guarded step that ignores ordinary difficult footing fictionally justified by your craft.",
+      "detail": "Your table decides whether this is a charm, a practiced ghost-step, or a flick of will. It does not ignore solid walls or lethal hazards without GM buy-in.",
+      "pool_die": null
+    },
+    {
+      "id": "ft-second-sight",
+      "name": "Second Sight",
+      "family": "Occult",
+      "level": 1,
+      "capacity": 2,
+      "summary": "Add Feature d4 to Perception or Investigation when reading auras, residues, or hidden occult signs.",
+      "detail": "Declare when you open your senses. The die is a named Feature source, not Advantage.",
+      "pool_die": "d4"
+    },
+    {
+      "id": "ft-binding-word",
+      "name": "Binding Word",
+      "family": "Occult",
+      "level": 1,
+      "capacity": 3,
+      "summary": "Once per session, force a narrow social or occult promise the fiction can support; opposed Will if contested.",
+      "detail": "Creates leverage and obligation, not mind control. Modern tables may call it a geas, a contract, or a blood oath.",
+      "pool_die": null
+    },
+    {
+      "id": "ft-cold-read",
+      "name": "Cold Read",
+      "family": "Social",
+      "level": 1,
+      "capacity": 2,
+      "summary": "Add Feature d4 to Influence or Deception when reading a mark in conversation.",
+      "detail": "Requires a live social exchange. Does not auto-succeed; it improves your pool.",
+      "pool_die": "d4"
+    },
+    {
+      "id": "ft-open-doors",
+      "name": "Open Doors",
+      "family": "Social",
+      "level": 1,
+      "capacity": 2,
+      "summary": "Once per session, establish a plausible introduction, invitation, or soft access.",
+      "detail": "Creates opportunity. The GM may narrow claims that exceed your fiction.",
+      "pool_die": null
+    },
+    {
+      "id": "ft-cover-story",
+      "name": "Cover Story",
+      "family": "Social",
+      "level": 1,
+      "capacity": 3,
+      "summary": "Spend 1 AP to lock a short cover identity; allies who heard it may echo it with Advantage once.",
+      "detail": "Works for courtly lies, club aliases, or undercover work. Crumbles if facts contradict it loudly.",
+      "pool_die": null
+    },
+    {
+      "id": "ft-field-kit",
+      "name": "Field Kit",
+      "family": "Technical",
+      "level": 1,
+      "capacity": 2,
+      "summary": "Add Feature d4 to Medicine, Engineering, or Security when you have a minute and ordinary tools.",
+      "detail": "Tools may be a med satchel, a ritual kit, or a multitool — same chassis.",
+      "pool_die": "d4"
+    },
+    {
+      "id": "ft-jury-rig",
+      "name": "Jury-Rig",
+      "family": "Technical",
+      "level": 1,
+      "capacity": 3,
+      "summary": "Once per session, make a damaged device, lock, or ward function for one short scene.",
+      "detail": "Temporary. The GM sets the failure fiction when the scene ends.",
+      "pool_die": null
+    },
+    {
+      "id": "ft-iron-gut",
+      "name": "Iron Gut",
+      "family": "Survival",
+      "level": 1,
+      "capacity": 2,
+      "summary": "Add Feature d4 to Fortitude against poison, sickness, or occult contamination.",
+      "detail": "Named Feature die. Does not stack with Advantage unless both are separately earned.",
+      "pool_die": "d4"
+    },
+    {
+      "id": "ft-hard-to-kill",
+      "name": "Hard to Kill",
+      "family": "Survival",
+      "level": 1,
+      "capacity": 3,
+      "summary": "When you would drop to 0 HP, remain at 1 HP once per session and become Exposed until you recover.",
+      "detail": "Playtest wording: you stay up, bloodied and obvious. Table may rename Exposed to their condition list.",
+      "pool_die": null
+    },
+    {
+      "id": "ft-ghost-trail",
+      "name": "Ghost Trail",
+      "family": "Survival",
+      "level": 1,
+      "capacity": 2,
+      "summary": "Add Feature d4 to Stealth or Survival when covering tracks or vanishing into terrain/crowd.",
+      "detail": "Urban alleys and deep woods both count.",
+      "pool_die": "d4"
+    }
+  ]
+}
